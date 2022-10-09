@@ -1,0 +1,24 @@
+{
+  "name": "phi-dev-plugin",
+  "version": "2.0.2",
+  "description": "Development plugin for Phi bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhiDevelopment/phi-dev-plugin.git"
+  },
+  "keywords": [
+    "Phi",
+    "Development",
+    "Plugin"
+  ],
+  "author": "Arisien",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PhiDevelopment/phi-dev-plugin/issues"
+  },
+  "homepage": "https://github.com/PhiDevelopment/phi-dev-plugin#readme"
+}
