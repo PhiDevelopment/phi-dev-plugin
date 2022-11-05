@@ -4,6 +4,8 @@ const os = require('os');
 const phi = require('../../../main');
 const auth = require('./auth')
 
+const Embed = require('../../../src/api/embed');
+
 const icon = `
    ▄███████▄    ▄█    █▄     ▄█   
   ███    ███   ███    ███   ███   
