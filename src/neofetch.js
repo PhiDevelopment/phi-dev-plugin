@@ -1,9 +1,9 @@
 const crypto = require('crypto');
 const os = require('os');
 
-const phi = require('../../../main');
 const auth = require('./auth')
 
+const phi = require('../../../main');
 const Embed = require('../../../src/api/embed');
 
 const icon = `
@@ -20,9 +20,9 @@ const icon = `
 module.exports = {
     name: 'neofetch',
     description: 'Get list of commands',
-    usage: '',
+    usage: '[otp]',
     run (message, args) {
-        if (!auth(message)) return message.channel.send(Embed.error('Unauthorized to run dev commands'));
+        if (!auth(message, args)) return message.channel.send(Embed.error('Unauthorized to run dev commands'));
         
         const data = [];
 

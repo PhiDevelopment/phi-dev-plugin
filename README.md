@@ -26,6 +26,10 @@ In order for the plugin to function, a `config.json` file must be created. The f
 
 * Place the plugin folder into the `./plugins` directory of Phi's main directory.
 
+## Todo
+
+* CLI input for the administrator (any commands are auto authorized)
+
 ## Contributors
 
 * [Arisien](https://github.com/Arisien) - Main developer
