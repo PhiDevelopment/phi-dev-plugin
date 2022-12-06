@@ -1,6 +1,6 @@
 {
   "name": "phi-dev-plugin",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "description": "Development plugin for Phi bot",
   "main": "main.js",
   "scripts": {

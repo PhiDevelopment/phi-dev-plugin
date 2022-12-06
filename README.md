@@ -4,23 +4,28 @@
 
 Phi is a modular discord bot coded in JavaScript. The Development plugin allows for easier control of the bot and parent system by a bot administrator.
 
-* *DISCLAIMER: Only use this plugin if you know what you are doing.*
-
 ## Commands
 
-* `neofetch`: Gives the administrator information on the instance of Phi which is running.
+For security reasons, all plugin commands must be sent by an authorized discord account with a OTP password as the final argument.
+
+* `neofetch`: Gives the administrator information on the instance of Phi which is running
+* `authorize`: Authorize a discord account as a valid administrator
+* `ip`: Returns public ip address of the network Phi is connected to
+* `qr`: Returns a QR code that can be used to set up 2FA
 
 ## Configuration
 
-In order for the plugin to function, a `config.json` file must be created. The following is an example of a `config.json` where all sensitive information has been left out:  
+In order for the plugin to function, a `config.json` is automatically created. This file may be edited manualy, or with scripts and commands. The following object displays structure of the configuration:  
 
 ```json
 {
-    "id": ""
+    "administrators": [],
+    "secret": {}
 }
 ```
 
-* `id`: The Discord ID of Phi's administrator.
+* `administrators`: An array containing the Discord IDs of Phi's authorized administrators.
+* `secret`: Object containing secret used for authorizing commands. Run `src/generate.js` to generate a new secret and invalidate the old one.
 
 ## Usage
 
@@ -28,7 +33,8 @@ In order for the plugin to function, a `config.json` file must be created. The f
 
 ## Todo
 
-* CLI input for the administrator (any commands are auto authorized)
+* CLI input for the administrator (any commands are auto authorized).
+* Extend how long it takes for an OTP to expire.
 
 ## Contributors
 

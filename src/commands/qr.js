@@ -1,10 +1,10 @@
 const qrcode = require('qrcode');
 
-const auth = require('./auth');
+const auth = require('../auth');
 
-const config = require('../config.json');
+const config = require('../../config.json');
 
-const Embed = require('../../../src/api/embed');
+const Embed = require('../../../../src/api/embed');
 
 module.exports = {
     name: 'qr',

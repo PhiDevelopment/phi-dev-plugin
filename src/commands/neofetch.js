@@ -1,10 +1,10 @@
 const crypto = require('crypto');
 const os = require('os');
 
-const auth = require('./auth')
+const auth = require('../auth')
 
-const phi = require('../../../main');
-const Embed = require('../../../src/api/embed');
+const phi = require('../../../../main');
+const Embed = require('../../../../src/api/embed');
 
 const icon = `
    ▄███████▄    ▄█    █▄     ▄█   
@@ -71,7 +71,7 @@ module.exports = {
         data.push('Home: ' + subhash);
 
         // Version: 1.0.0
-        data.push('Version: ' + require('../package.json').version);
+        data.push('Version: ' + require('../../../../package.json').version);
 
         // // Shell: /bin/bash
         // data.push('Shell: ' + os.userInfo().shell);

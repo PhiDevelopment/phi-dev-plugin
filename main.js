@@ -1,7 +1,7 @@
-const authorize = require('./src/authorize');
-const neofetch = require('./src/neofetch');
-const ip = require('./src/ip');
-const qr = require('./src/qr');
+const authorize = require('./src/commands/authorize');
+const neofetch = require('./src/commands/neofetch');
+const ip = require('./src/commands/ip');
+const qr = require('./src/commands/qr');
 
 try {
     const config = require('./config.json');

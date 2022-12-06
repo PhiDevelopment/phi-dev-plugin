@@ -1,9 +1,9 @@
 const path = require('path');
 const fs = require('fs');
 
-const auth = require('./auth');
+const auth = require('../auth');
 
-const Embed = require('../../../src/api/embed');
+const Embed = require('../../../../src/api/embed');
 
 module.exports = {
     name: 'authorize',
